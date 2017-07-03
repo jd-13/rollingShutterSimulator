@@ -21,7 +21,7 @@ numpy (`pip install numpy`)
 # Running the script
 1. Put the script in the same directory as the video you want to work on. This step isn't really necessary, but it makes things a little easier.  
 2. From the directory which contains the script, run: `python3.5 rollingShutterSim.py`  
-3. The script will then ask for a series of parameters. At this time the script does not validate input (yeah I definitely need to fix that)  
+3. The script will then ask for a series of parameters. At this time the script does not validate input, so be careful (yeah I definitely need to fix that)  
 4. If all goes well you'll get a video or image created in the same directory that you ran the script from  
 
 ## Paramters
