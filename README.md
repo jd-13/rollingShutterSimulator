@@ -1,7 +1,8 @@
 # Summary
 This script was inspired by SmarterEveryDay's video on the rolling shutter effect, you should definitely go watch that here: https://youtu.be/dNVtMmLlnoE  
 
-This repository contains a single python script which when ran will ask for a video file (use any video you want) and several other paramters, and will then generate a simulation of the rolling shutter effect.  
+The single script in this repository will create a simulation of the rolling shutter effect on any video that you provide to it.  
+When ran the script will ask for the video file that you wish to use and several other paramters (described below), and will then generate a simulation of the rolling shutter effect.  
 
 ![alt tag](http://i.giphy.com/fTEyMzDF00uGY.gif)  
 
