@@ -10,6 +10,8 @@ The script runs interactively (as I imagine this will be more usefull for most),
 
 The script produces mp4 files, and can also produce a jpg of the full effect.  
 
+(For those interested, the above demo was created from: https://pixabay.com/en/videos/ferris-wheel-fair-night-2122/)  
+
 # Setup
 Before beginning, please note that I have only spent an hour or so working on this so far, so there will be bugs and rough edges.  
 
