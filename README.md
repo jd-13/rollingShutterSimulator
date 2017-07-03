@@ -14,18 +14,18 @@ Before beginning, please note that I have only spent an hour or so working on th
 
 To run this script you'll need:  
 python3  
-opencv (pip install opencv-python)  
-numpy (pip install numpy)  
+opencv (`pip install opencv-python`)  
+numpy (`pip install numpy`)  
 
 # Running the script
 1. Put the script in the same location as the video you want to work on. This step isn't really necessary, but it makes things a little easier.  
-2. Run: python3.5 rollingShutterSim.py  
+2. Run: `python3.5 rollingShutterSim.py`  
 3. The script will then ask for a series of parameters. At this time the script does not validate input (yeah I definitely need to fix that)  
 4. If all goes well you'll get a video or image created in the same directory that you ran the script from  
 
 # Paramters
 Some more information on the parameters which the script will ask for:  
-File path - The path to the video, or just the name if the video is in the same folder as the script  
-Frames to increment - Must be an integer, a higher number leads to a faster moving effect  
-Direction - You must provide one of four options: lr, rl, tb, or bt. This determines the direction of the sweep  
-Mode - Currently this doesn't work quite right, but this where you choose whether you want video or a single image as output  
+**File path** - The path to the video, or just the name if the video is in the same folder as the script  
+**Frames to increment** - Must be an integer, a higher number leads to a faster moving effect  
+**Direction** - You must provide one of four options: lr, rl, tb, or bt. This determines the direction of the sweep  
+**Mode** - Currently this doesn't work quite right, but this where you choose whether you want video or a single image as output  
