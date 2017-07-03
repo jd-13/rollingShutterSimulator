@@ -1,7 +1,7 @@
 # Summary
 This script was inspired by SmarterEveryDay's video on the rolling shutter effect, you should definitely go watch that here: https://youtu.be/dNVtMmLlnoE  
 
-This repository contains a single python script which when ran will ask for a video file and several other paramters, and will then generate a simulation of the rolling shutter effect.  
+This repository contains a single python script which when ran will ask for a video file (use any video you want) and several other paramters, and will then generate a simulation of the rolling shutter effect.  
 
 ![alt tag](http://i.giphy.com/fTEyMzDF00uGY.gif)  
 
@@ -18,12 +18,12 @@ opencv (`pip install opencv-python`)
 numpy (`pip install numpy`)  
 
 # Running the script
-1. Put the script in the same location as the video you want to work on. This step isn't really necessary, but it makes things a little easier.  
-2. Run: `python3.5 rollingShutterSim.py`  
+1. Put the script in the same directory as the video you want to work on. This step isn't really necessary, but it makes things a little easier.  
+2. From the directory which contains the script, run: `python3.5 rollingShutterSim.py`  
 3. The script will then ask for a series of parameters. At this time the script does not validate input (yeah I definitely need to fix that)  
 4. If all goes well you'll get a video or image created in the same directory that you ran the script from  
 
-# Paramters
+## Paramters
 Some more information on the parameters which the script will ask for:  
 **File path** - The path to the video, or just the name if the video is in the same folder as the script  
 **Frames to increment** - Must be an integer, a higher number leads to a faster moving effect  
