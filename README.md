@@ -26,7 +26,7 @@ numpy (`pip install numpy`)
 3. The script will then ask for a series of parameters. At this time the script does not validate input, so be careful (yeah I definitely need to fix that)  
 4. If all goes well you'll get a video or image created in the same directory that you ran the script from  
 
-## Paramters
+## Parameters
 Some more information on the parameters which the script will ask for:  
 **File path** - The path to the video, or just the name if the video is in the same folder as the script  
 **Frames to increment** - Must be an integer, a higher number leads to a faster moving effect  
