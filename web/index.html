@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <meta name="keywords" content="rolling shutter, video effects">
+        <title>Rolling Shutter Sim</title>
+    </head>
+
+    <body onload="">
+
+        <div class="container"> <!-- START WHOLE PAGE CONTAINER -->
+
+            <div class="jumbotron" id="jumbotronCustom"> <!-- START HOME JUMBOTRON -->
+                <h2><span id="home">Rolling Shutter Sim</span></h2>
+
+                <div id="step1Div"> <!-- START STEP 1 -->
+                    <div class="item row">
+                        <h3>1. Upload your file below</h3>
+                        <input id="videoInput" name="videoInput" type="file" class="file"/>
+                    </div>
+
+                    <div class="item row">
+                        <video id="step1Preview" width="320" height="240" controls hidden>
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+
+                    <div class="item row">
+                        <input id="step1NextButton" type="button" class="btn btn-outline-primary disabled" value="Next"/>
+                    </div>
+                </div> <!-- END STEP 1 -->
+
+                <div id="step2Div" hidden> <!-- START STEP 2 -->
+                    <div class="item row">
+                        <h3>2. Choose some options</h3>
+                    </div>
+
+                    <div class="item row">
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p>Direction of the rolling shutter</p>
+                            <div class="radio videoParam">
+                                <label><input type="radio" name="dirRadio" value="tb" checked/>Top to bottom</label>
+                            </div>
+                            <div class="radio videoParam">
+                                <label><input type="radio" name="dirRadio" value="bt"/>Bottom to top</label>
+                            </div>
+                            <div class="radio videoParam">
+                                <label><input type="radio" name="dirRadio" value="lr"/>Left to right</label>
+                            </div>
+                            <div class="radio videoParam">
+                                <label><input type="radio" name="dirRadio" value="rl"/>Right to left</label>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <p>Speed of the shutter sweep (must be integer greater than one)</p>
+                            <input id="framesIncrement" class="videoParam" type="number" value="10" min="1" max="200" required/>
+                        </div>
+                    </div>
+
+                    <div class="item row">
+                        <canvas id="canvas"></canvas>
+                    </div>
+                </div> <!-- END STEP 2 -->
+
+            </div> <!-- END HOME JUMBOTRON -->
+
+        </div> <!-- END WHOLE PAGE CONTAINER -->
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
